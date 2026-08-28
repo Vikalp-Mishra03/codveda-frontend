@@ -1,0 +1,121 @@
+* {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /* color:; */
+}
+
+.form {
+  display: block;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+  background-color: #0b1120;
+}
+.circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: red;
+  filter: blur(8.4px);
+  position: relative;
+  /* top: 110px;
+  left: 40%; */
+  top: -30%;
+  left: -5%;
+  animation: bounce 4.5s infinite alternate ease-in;
+}
+.message{
+    font-size: 12px;
+}
+.blue-circle {
+  top: 25%;
+  left: 5%;
+  animation: bounce1 5s infinite alternate ease-in;
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: translateY(40px);
+    animation-timing-function: ease-in;
+  }
+}
+
+@keyframes bounce1 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(30px);
+  }
+}
+.form-box {
+  border-radius: 16px;
+  padding: 25px;
+  position: absolute;
+  box-shadow: 0 20px 40px rgba(83, 62, 62, 0.3);
+}
+.form-box .input {
+  margin: 20px 30px;
+  display: grid;
+  justify-content: space-between;
+}
+.form-box label {
+  color: #f8fafc;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.form-box input {
+  margin: 10px 5px;
+  background: #213350;
+  color: #f8fafc;
+  border: 1px solid #334155;
+  font-size: 15px;
+  border-radius: 10px;
+  padding: 8px 30px;
+  font-weight: 600;
+  box-shadow: 0px 0px 10px 0px #111827 inset;
+}
+
+.form-box input::placeholder {
+  color: #94a3b8;
+}
+
+.form-box input:focus {
+  border-color: #6366f1;
+  outline: none;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  margin: 15px 0px;
+}
+
+.form-box button {
+  transition: 0.5s;
+  color: #ffffff;
+  padding: 6px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  background: #4f46e5;
+  border: 2px solid #4f46e5;
+  box-shadow: 0px 0px 10px 0px #332da4 inset;
+}
+
+.form-box button:hover {
+  background: transparent;
+  border: 2px solid #4f46e5;
+}
