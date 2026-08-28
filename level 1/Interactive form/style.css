@@ -58,6 +58,12 @@
   }
 }
 .form-box {
+  /* background-color: #111827; */
+  /* background-color: transparent;
+
+  border-radius: 10px;
+  position: absolute; */
+  /* background-color: #111827; */
   border-radius: 16px;
   padding: 25px;
   position: absolute;
