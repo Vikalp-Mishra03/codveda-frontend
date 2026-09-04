@@ -1,0 +1,18 @@
+.h-wrapper {
+  background: #000;
+}
+.h-container {
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+}
+.h-menu{
+    gap: 2rem;
+}
+
+.h-menu a{
+    color: var(--secondary);
+    text-decoration: none;
+    cursor: pointer;
+}
