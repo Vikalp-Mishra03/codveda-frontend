@@ -1,0 +1,25 @@
+.box {
+    gap: 1.5rem;
+    background: #4161df;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 6px solid #5d77d6;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+}
+.heading{
+    color: #fff;
+}
+
+.small{
+    color: #ffffff96;
+}
+
+.modify{
+    background: transparent;
+    border: 2px solid #fff;
+}
+.modify:hover{
+  box-shadow: 0px 10px 20px rgba(0, 26, 255, 0.2);
+}

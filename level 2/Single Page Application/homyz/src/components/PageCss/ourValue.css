@@ -1,0 +1,95 @@
+.v-container > div {
+  flex: 1;
+}
+.image-container {
+  width: 30rem;
+  height: 35rem;
+  overflow: hidden;
+  border-radius: 15rem 15rem 0 0;
+  border: 8px solid rgba(255, 255, 255, 0.12);
+}
+.v-container .image-container {
+  border: 8px solid rgb(232 232 232 / 93%);
+}
+
+.image-container > img {
+  width: 100%;
+  height: 100%;
+}
+
+.accordion {
+  margin-top: 2rem;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+.accordionItem {
+  background: white;
+  border: 0.8px solid rgba(128, 128, 128, 0.143);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  transition: all 0.5s ease;
+}
+.accordionItem.expanded {
+  box-shadow: var(--shadow);
+  border-radius: 6px;
+}
+.accordionPanel {
+  padding: 20px;
+  animation: fadein 0.35s ease-in;
+}
+
+.accordion .head {
+  font-size: 1.1rem;
+}
+.accordionButton {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  transition: all 0.5s ease;
+}
+
+.accordionArrow {
+  padding: 10px;
+  background: #eeeeff;
+  border-radius: 5px;
+  display: flex;
+  color: #1f3e72;
+    text-align: center;
+  align-items: center ;
+  transition: all 0.5s ease;
+}
+
+.accordionIcon {
+  padding: 10px;
+  background: #eeeeff;
+  border-radius: 5px;
+  display: flex;
+  color: blue;
+  transition: all 0.5s ease;
+  text-align: center;
+  align-items: center ;
+}
+
+
+@media (max-width: 768px) {
+  .v-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .v-container > div {
+    width: 100%;
+    flex: none;
+  }
+
+  .v-container .image-container {
+    width: 100%;
+    height: 25rem;
+  }
+
+  .v-right {
+    width: 100%;
+  }
+}

@@ -1,0 +1,58 @@
+.contactModes {
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.contactModes .row {
+  gap: 1.5rem;
+}
+
+.mode {
+  width: 16rem;
+  padding: 1rem;
+  border: 0.8px solid rgba(128, 128, 128, 0.143);
+  border-radius: 5px;
+  gap: 1rem;
+  transition: all 0.5s;
+}
+.mode > :nth-child(1) {
+  width: 100%;
+  gap: 1.6rem;
+}
+.c-container > div {
+  flex: 1;
+}
+
+.c-container {
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.contactText {
+  color: #1f3e72;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.c-container .mode .icon {
+  color: blue;
+  padding: 10px;
+  background: #eeeeff;
+  border-radius: 5px;
+}
+
+@media (max-width: 1024px) {
+  .row {
+    flex-direction: column;
+    width: 100%;
+  }
+    .contactModes {
+        width: 100%;
+    }
+  .c-container {
+    flex-direction: column;
+  }
+      .mode {
+        width: 100%;
+    }
+}
