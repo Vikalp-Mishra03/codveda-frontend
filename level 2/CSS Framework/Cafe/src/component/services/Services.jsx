@@ -49,7 +49,7 @@ const containerVariants = {
 
 const Services = () => {
   return (
-    <div className="container my-16 space-y-4">
+    <div className="mx-auto w-full max-w-7xl px-4 sm:px-8 my-16 space-y-4">
       <div className="text-center space-y-2 max-w-lg mx-auto">
         <motion.h1
           initial={{ opacity: 0, y: 100 }}
