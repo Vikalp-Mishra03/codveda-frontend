@@ -105,9 +105,10 @@ const Hero = () => {
 
           {sidebarOpen && (
             <motion.div
-            initial={{ opacity: 0, x: 100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            className="absolute top-0 right-0 w-1/4 h-full bg-linear-to-b from-primary/80 to-primary-dark/80 backdrop-blur-sm z-10">
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              className="absolute top-0 right-0 w-1/4 h-full bg-linear-to-b from-primary/80 to-primary-dark/80 backdrop-blur-sm z-10"
+            >
               <div className="w-full h-full flex justify-center items-center">
                 <div className=" flex flex-col justify-center items-center text-white gap-6">
                   <div className="w-px h-17.5 bg-amber-50"></div>
@@ -125,8 +126,8 @@ const Hero = () => {
               </div>
             </motion.div>
           )}
-          {/* sidebar menu section */}
         </div>
+        
       </section>
     </main>
   );
