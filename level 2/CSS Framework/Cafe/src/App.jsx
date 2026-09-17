@@ -1,3 +1,4 @@
+import Footer from "./component/footer/Footer";
 import Hero from "./component/hero/Hero";
 import Services from "./component/services/Services";
 import WhereToBuy from "./component/wheretobuy/WhereToBuy";
@@ -8,6 +9,7 @@ const App = () => {
       <Hero />
       <Services />
       <WhereToBuy />
+      <Footer />
     </div>
   );
 };

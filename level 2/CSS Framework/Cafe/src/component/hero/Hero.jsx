@@ -26,7 +26,7 @@ const Hero = () => {
             <div className="text-light-orange mt-25 md:mt-[-45%] p-4 space-y-28">
               <motion.h1
                 initial={{ opacity: 0, y: -100 }}
-                animate={{ opacity: 1, y: 0 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{
                   type: "spring",
                   stiffness: 100,
@@ -39,7 +39,7 @@ const Hero = () => {
               </motion.h1>
               <motion.div
                 initial={{ opacity: 0, y: -100 }}
-                animate={{ opacity: 1, y: 0 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{
                   type: "spring",
                   stiffness: 100,
@@ -63,7 +63,7 @@ const Hero = () => {
             <div className="relative">
               <motion.img
                 initial={{ opacity: 0, scale: 0 }}
-                animate={{ opacity: 1, scale: 1 }}
+                whileInView={{ opacity: 1, scale: 1 }}
                 transition={{
                   type: "spring",
                   stiffness: 100,
@@ -76,7 +76,7 @@ const Hero = () => {
               />
               <motion.div
                 initial={{ opacity: 0, y: -100 }}
-                animate={{ opacity: 1, y: 0 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{
                   type: "spring",
                   stiffness: 100,
@@ -87,7 +87,7 @@ const Hero = () => {
               ></motion.div>
               <motion.div
                 initial={{ opacity: 0, y: -100 }}
-                animate={{ opacity: 1, y: 0 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{
                   type: "spring",
                   stiffness: 100,
