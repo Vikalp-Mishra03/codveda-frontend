@@ -1,0 +1,91 @@
+.vikalp-navbar {
+  width: 100%;
+  background: #111827;
+  color: white;
+}
+
+.vikalp-navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  min-height: 64px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.vikalp-navbar-logo {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.vikalp-navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.vikalp-navbar-links a {
+  color: #d1d5db;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.vikalp-navbar-links a:hover {
+  color: white;
+}
+
+.vikalp-navbar-links a:focus-visible,
+.vikalp-navbar-logo:focus-visible {
+  outline: 3px solid rgba(96, 165, 250, 0.6);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+.vikalp-navbar-menu {
+  display: none;
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.vikalp-navbar-menu:focus-visible {
+  outline: 3px solid rgba(96, 165, 250, 0.6);
+  outline-offset: 3px;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+  .vikalp-navbar-container {
+    position: relative;
+    flex-wrap: wrap;
+  }
+
+  .vikalp-navbar-menu {
+    display: block;
+  }
+
+  .vikalp-navbar-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    padding: 10px 0;
+  }
+
+  .vikalp-navbar-links-open {
+    display: flex;
+  }
+
+  .vikalp-navbar-links a {
+    width: 100%;
+    padding: 12px 0;
+  }
+}
