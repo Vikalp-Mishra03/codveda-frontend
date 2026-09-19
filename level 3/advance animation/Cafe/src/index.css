@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #f19509;
+  --color-primary-dark: #e86f00;
+  --color-light-orange: #f1dabf;
+  --color-dark-gray: #1a1f25;
+  --color-light-gray: #272c35;
+}
+
+@layer utilities {
+  .img-shadow {
+    filter: drop-shadow(40px 50px 25px #0f1115);
+  }
+
+  .img-shadow2 {
+    filter: drop-shadow(10px 30px 15px #3030307a);
+  }
+
+  .input-style {
+    @apply px-4 py-2 border border-gray-400 rounded-md;
+  }
+   
+
+}
